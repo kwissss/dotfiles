@@ -1,0 +1,15 @@
+LogLevel ERROR
+
+Host *
+  AddKeysToAgent yes
+  IdentityAgent ~/.1password/agent.sock
+
+Host 192.168.*.*
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+Host 172.16.*.*
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+Host 10.*.*.*
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null

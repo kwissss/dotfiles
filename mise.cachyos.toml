@@ -1,0 +1,25 @@
+[vars]
+machine = "cachyos"
+
+[dotfiles]
+"~/.config/mise/mise.cachyos.toml" = { source = "~/.dotfiles/mise.cachyos.toml", mode = "symlink" }
+
+# Desktop/system pieces (fish, ghostty, fonts, kubectl, helm, k9s, flux, krew)
+# come from pacman; see README. Global CLI tooling lives here.
+[tools]
+"1password-cli" = "latest"
+actionlint = "latest"
+doggo = "latest"
+go = "latest"
+jq = "latest"
+just = "latest"
+kubecolor = "latest"
+lefthook = "latest"
+lsd = "latest"
+node = "latest"
+shellcheck = "latest"
+starship = "latest"
+stern = "latest"
+talos = "latest"
+yq = "latest"
+zoxide = "latest"

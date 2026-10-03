@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [],
+    "additionalDirectories": [
+      "/tmp"
+    ]
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true
+  },
+  "theme": "dark",
+  "tui": "fullscreen",
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  }
+}

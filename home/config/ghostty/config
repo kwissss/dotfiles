@@ -1,0 +1,23 @@
+# Theme config
+theme = Night Owl
+
+# Fonts
+font-family = FiraCode Nerd Font
+font-size = 14
+font-thicken = true
+
+window-padding-balance = false
+window-padding-x = 10
+window-padding-y = 10,2
+
+# Application settings
+clipboard-trim-trailing-spaces = true
+
+# Window settings
+window-height = 45
+window-width = 180
+
+# Cursor settings
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor

@@ -1,0 +1,36 @@
+[user]
+  name = {{ vars.git_name }}
+  email = {{ vars.git_email }}
+  signingKey = {{ vars.git_signing_key }}
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = /opt/1Password/op-ssh-sign
+  allowedSignersFile = {{ env.HOME }}/.ssh/allowed_signers
+[format]
+  signOff = true
+[core]
+  autocrlf = input
+  editor = vim
+  excludesfile = {{ env.HOME }}/.gitignore_global
+[commit]
+  gpgsign = true
+[merge]
+  ff = only
+[pull]
+  rebase = true
+[rebase]
+  autoStash = true
+[fetch]
+  prune = true
+[status]
+  submoduleSummary = false
+[tag]
+  forceSignAnnotated = true
+  gpgSign = true
+[init]
+  defaultBranch = main
+[url "ssh://git@github.com/"]
+  pushInsteadOf = https://github.com/
+[push]
+  autoSetupRemote = true
